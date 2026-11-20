@@ -12,6 +12,10 @@ using namespace std;
 
 int main(int argc,char* argv[])
 {
+    if(argc<4){
+        cout<<"用法: "<<argv[0]<<" <老虎数> <狼数> <兔子数>"<<endl;
+        return 0;
+    }
     int Tigers=atoi(argv[1]);
     int Wolves=atoi(argv[2]);
     int Rabbits=atoi(argv[3]);
